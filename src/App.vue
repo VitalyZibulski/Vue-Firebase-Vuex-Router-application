@@ -1,7 +1,10 @@
 <template>
   <div id="app">
       <h1>Parent:{{workerName}}</h1>
-    <app-worker :workerName="workerName" :workerAge="workerAge" @nameChanged="workerName=$event"></app-worker>
+    <app-worker :workerName="workerName" :workerAge="workerAge" @nameChanged="workerName=$event"
+    :changeFunc1="changeNameToWorker"
+
+    ></app-worker>
   </div>
 </template>
 
@@ -15,6 +18,11 @@ export default {
       workerAge: '100'
     }
   },
+    methods:{
+      changeNameToWorker(){
+          this.workerName = 'Student2'
+      }
+    },
     components:{
       appWorker: Worker
     }

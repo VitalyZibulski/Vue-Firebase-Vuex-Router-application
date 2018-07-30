@@ -3,13 +3,13 @@
     <h2>worker Name: {{ workerName }} / {{ reverseName }}</h2>
     <p>worker Price: {{ workerAge }}</p>
     <button @click="changeName">Change Name</button>
-    <button @click="changeFunc()">Change From Parent</button>
+    <button @click="changeFunc1()">Change From Parent</button>
   </div>
 </template>
 
 <script>
     export default {
-        props: ['workerName', 'workerPrice'],
+        props: ['workerName', 'workerPrice', 'changeFunc1'],
         methods: {
             changeName () {
                 this.workerName = 'Stundent1'
