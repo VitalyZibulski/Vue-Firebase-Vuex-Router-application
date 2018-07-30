@@ -2,13 +2,16 @@
   <div id="app">
       <h1>Parent:{{workerName}}</h1>
     <app-worker :workerName="workerName" :workerAge="workerAge" @nameChanged="workerName=$event"
-    :changeFunc1="changeNameToWorker">
+    :changeFunc1="changeNameToWorker"
+    @counterUpdated="counter=$event">
     </app-worker>
+    <app-counter></app-counter>
   </div>
 </template>
 
 <script>
 import Worker from './Worker.vue'
+import Counter from './Counter.vue'
 export default {
   name: 'app',
   data () {
@@ -23,7 +26,8 @@ export default {
       }
     },
     components:{
-      appWorker: Worker
+      appWorker: Worker,
+      appCounter: Counter
     }
 }
 </script>
