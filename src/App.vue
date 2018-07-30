@@ -1,7 +1,7 @@
 <template>
   <div id="app">
       <h1>Parent:{{workerName}}</h1>
-    <app-worker :workerName="workerName" :workerAge="workerAge"></app-worker>
+    <app-worker :workerName="workerName" :workerAge="workerAge" @nameChanged="workerName=$event"></app-worker>
   </div>
 </template>
 
