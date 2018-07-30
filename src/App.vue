@@ -2,9 +2,8 @@
   <div id="app">
       <h1>Parent:{{workerName}}</h1>
     <app-worker :workerName="workerName" :workerAge="workerAge" @nameChanged="workerName=$event"
-    :changeFunc1="changeNameToWorker"
-
-    ></app-worker>
+    :changeFunc1="changeNameToWorker">
+    </app-worker>
   </div>
 </template>
 
