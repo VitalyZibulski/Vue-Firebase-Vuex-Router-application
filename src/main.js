@@ -20,7 +20,7 @@ Vue.component('my-counter-1', {
     }
 })
 
-Vue.component('my-counter-2', {
+Vue.component('my-counter-1', {
     template: `
     <div>
       <h2>Счетчик: {{ counter }}</h2>
