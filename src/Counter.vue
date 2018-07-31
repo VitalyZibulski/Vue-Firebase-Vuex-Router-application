@@ -1,19 +1,17 @@
 <template>
-  <h1>Counter: {{counter}}</h1>
+  <div>
+  <h1>Counter</h1>
+  </div>
 </template>
 
 <script>
-  import {evenEmitter} from "./main";
   export default {
-        data(){
-            return{
-                counter:0
-            }
-        },
-      created(){
-            evenEmitter.$on('counterUpdated',(num) => {
-                this.counter += num
-            })
-      }
+
     }
 </script>
+
+<style scoped>
+  h1{
+    color:purple;
+  }
+</style>
