@@ -2,6 +2,8 @@
   <div>
     <h2>{{title}}</h2>
     <h2>{{title | uppercase}}</h2>
+    <h2>{{title | snippet}}</h2>
+    <h2>{{title | snippet | uppercase}}</h2>
   </div>
 </template>
 
