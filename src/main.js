@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import App from './App.vue'
-import ListNames from './ListNames'
+import VueRouter from 'vue-router'
+import router from './routes'
 
-Vue.filter('snippet', (value) => {
-    return value.slice(0,10)
-})
+Vue.use(VueRouter)
 
 new Vue({
     el: '#app',
-    render: h => h(App)
+    render: h => h(App),
+    router:router  //we can use just router without router:router
 })
