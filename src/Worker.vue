@@ -1,6 +1,10 @@
 <template>
   <div>
-    <h1>Worker</h1>
+    <slot name="title"></slot>
+
+    <hr>
+
+    <slot name="text"></slot>
   </div>
 </template>
 
@@ -11,7 +15,11 @@
 </script>
 
 <style scoped>
-  div{
-    border:1px solid green;
+  div {
+    border: 1px solid green;
+    padding: 10px;
+  }
+  h2 {
+    color: red;
   }
 </style>
