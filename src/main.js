@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
-import MyDirective from './color'
+import ListNames from './ListNames'
 
-Vue.directive('colored', MyDirective)
+Vue.component('app-list', ListNames)
 
 new Vue({
     el: '#app',
