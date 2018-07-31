@@ -1,9 +1,6 @@
 <template>
   <div>
-    <app-pizza>
-      <h2 slot="title">{{ workerName }}</h2>
-      <p slot="text">Lorem, ipsum dolor.</p>
-    </app-pizza>
+      <h2 v-colored>{{ workerName }}</h2>
   </div>
 </template>
 
