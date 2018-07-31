@@ -1,28 +1,22 @@
 <template>
   <div>
     <h2>{{title}}</h2>
-
-    <input type="text" v-model="search">
-
-    <ul>
-      <li v-for="name in filteredNames" :key="name">{{name}}</li>
-    </ul>
-
-    <hr>
-
-    <app-list></app-list>
+    <h2>{{title | uppercase}}</h2>
   </div>
 </template>
 
 <script>
-  import ListMixin from './listMixin'
     export default {
         data () {
             return {
                 title: 'Learn filters',
             }
         },
-          mixins:[ListMixin]
+         filters:{
+            uppercase(value){
+                return value.toUpperCase()
+            }
+         }
   }
 
 </script>
